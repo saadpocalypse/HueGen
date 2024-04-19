@@ -1,0 +1,43 @@
+.navBar{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 150px;
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+}
+
+.link, .activeLink{
+    font-size: large;
+    transition: 0.2s all linear;
+}
+
+.link{
+    filter: opacity(0.6);
+}
+
+.link:hover, .activeLink:hover{
+    filter: opacity(1);
+    cursor: pointer;
+}
+
+.nameAndLogo{
+    display: flex;
+    align-items: center;
+}
+
+.companyLogo{
+    height: 100px;
+}
