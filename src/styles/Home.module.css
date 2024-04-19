@@ -1,43 +1,107 @@
-.navBar{
-    font-family: 'Poppins', sans-serif;
+.navBar {
+    font-family: "Poppins", sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 2%;
     padding-right: 2%;
-    height: 150px;
+    height: 100px;
+    background-color: white;
+    -webkit-box-shadow: 0px 2px 14px -1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 14px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 14px -1px rgba(0, 0, 0, 0.1);
 }
 
-.navLinks{
+.navLinks {
     display: flex;
     align-items: center;
     column-gap: 30px;
 }
 
-.name{
-    font-family: 'Montserrat', sans-serif;
+.name {
+    font-family: "Montserrat", sans-serif;
     font-size: x-large;
 }
 
-.link, .activeLink{
+.link,
+.activeLink {
     font-size: large;
     transition: 0.2s all linear;
 }
 
-.link{
+.link {
     filter: opacity(0.6);
 }
 
-.link:hover, .activeLink:hover{
+.link:hover,
+.activeLink:hover {
     filter: opacity(1);
     cursor: pointer;
 }
 
-.nameAndLogo{
+.nameAndLogo {
     display: flex;
     align-items: center;
 }
 
-.companyLogo{
+.companyLogo {
     height: 100px;
+    cursor: pointer;
+}
+
+.body {
+    background: #fffbf4;
+    min-height: 100vh;
+}
+
+.sectionTwo {
+    margin-top: 50px;
+    margin-left: 2%;
+    min-height: 70vh;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionContent{
+    display: flex;
+}
+
+.header {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    width: 60%;
+    color: #525252;
+    margin-left: 5px;
+}
+
+.tagLine {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    color: #525252;
+    margin-left: 5px;
+}
+
+.button{
+    font-family: 'Poppins', sans-serif;
+    background: #ff6188;
+    font-size: large;
+    padding: 8px 25px;
+    border-radius: 100px;
+    color: #fffbf4;
+    margin-top: 15px;
+}
+
+.wave{
+    stroke: rgb(134, 134, 218);
+}
+
+.icon{
+    font-size: x-large;
+    margin-top: 50px;
+    color: rgb(239, 113, 134);
+    cursor: pointer;
 }
