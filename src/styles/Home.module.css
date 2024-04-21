@@ -105,3 +105,54 @@
     color: rgb(239, 113, 134);
     cursor: pointer;
 }
+
+.burger{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .activeLink, .link{
+        display: none;
+    }
+    .burger{
+        display: block;
+        font-size: large;
+        transition: 0.2s all linear;
+        cursor: pointer;
+        filter: opacity(0.6);
+    }
+
+    .burger:hover{
+        filter: opacity(1);
+    }
+
+    .graphic{
+        display: none;
+    }
+
+    .header{
+        font-size: 30px;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header, .tagLine{
+        text-align: center;
+    }
+
+    .header{
+        margin-bottom: 35px;
+    }
+
+    .sectionContentInnerDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
