@@ -4,7 +4,7 @@ import {
     MenuOutlined,
     GithubOutlined,
 } from "@ant-design/icons";
-import { ColorPicker, Spacem, message } from "antd";
+import { ColorPicker} from "antd";
 import { useState, useRef } from "react";
 
 export default function Home() {
