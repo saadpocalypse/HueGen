@@ -53,6 +53,7 @@
 
 .body {
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .sectionTwo {
@@ -162,16 +163,27 @@
     filter: opacity(1);
 }
 
+.mobileGraphic{
+    display: none;
+    height: 200px;
+    margin-top: 50px;
+}
+
 @media (max-width: 768px){
     .activeLink, .link{
         display: none;
     }
+
     .burger{
         display: block;
-        font-size: large;
+        font-size: x-large;
         transition: 0.2s all linear;
         cursor: pointer;
         filter: opacity(0.3);
+    }
+
+    .mobileGraphic{
+        display: block;
     }
 
     .burger:hover{
