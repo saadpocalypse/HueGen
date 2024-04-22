@@ -114,7 +114,7 @@ export default function Home() {
                                     className={styles.linkBody}
                                     style={{ color: linksColor }}
                                 >
-                                    Here
+                                    This
                                 </span>{" "}
                                 is an example of a link.
                             </p>
