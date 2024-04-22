@@ -77,7 +77,7 @@ export default function Home() {
             >
                 <div className={styles.nameAndLogo}>
                     <img
-                        src="/logo.svg"
+                        src="/static/images/Logo.svg"
                         alt="logo"
                         className={styles.companyLogo}
                     />
