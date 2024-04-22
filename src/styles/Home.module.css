@@ -106,8 +106,44 @@
     cursor: pointer;
 }
 
+.linkBody{
+    color: red;
+    cursor: pointer;
+}
+
 .burger{
     display: none;
+}
+
+.sectionThree{
+    margin-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+}
+
+.colorPickerDiv{
+    background: white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 7px;
+    -webkit-box-shadow: 0px 2px 14px -1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 14px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 14px -1px rgba(0, 0, 0, 0.1);
+}
+
+.colorTitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
 }
 
 @media (max-width: 768px){
