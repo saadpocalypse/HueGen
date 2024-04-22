@@ -1,15 +1,17 @@
 .navBar {
     font-family: "Poppins", sans-serif;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 2%;
     padding-right: 2%;
     height: 100px;
-    background-color: white;
     -webkit-box-shadow: 0px 2px 14px -1px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 2px 14px -1px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 14px -1px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    top: 0;
 }
 
 .navLinks {
@@ -30,7 +32,7 @@
 }
 
 .link {
-    filter: opacity(0.6);
+    filter: opacity(0.3);
 }
 
 .link:hover,
@@ -50,16 +52,15 @@
 }
 
 .body {
-    background: #fffbf4;
     min-height: 100vh;
 }
 
 .sectionTwo {
-    margin-top: 50px;
     margin-left: 2%;
     min-height: 70vh;
     margin-right: 2%;
     display: flex;
+    padding-top: 150px;
     flex-direction: column;
     align-items: center;
 }
@@ -73,7 +74,6 @@
     font-size: 40px;
     font-weight: bold;
     width: 60%;
-    color: #525252;
     margin-left: 5px;
 }
 
@@ -81,33 +81,24 @@
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     margin-top: 5px;
-    color: #525252;
     margin-left: 5px;
 }
 
 .button{
     font-family: 'Poppins', sans-serif;
-    background: #ff6188;
     font-size: large;
     padding: 8px 25px;
     border-radius: 100px;
-    color: #fffbf4;
     margin-top: 15px;
-}
-
-.wave{
-    stroke: rgb(134, 134, 218);
 }
 
 .icon{
     font-size: x-large;
     margin-top: 50px;
-    color: rgb(239, 113, 134);
     cursor: pointer;
 }
 
 .linkBody{
-    color: red;
     cursor: pointer;
 }
 
@@ -146,6 +137,31 @@
     font-size: large;
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    row-gap: 7px;
+}
+
+.footerText{
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+.githubIcon{
+    font-size: x-large;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    filter: opacity(0.4);
+}
+
+.githubIcon:hover{
+    filter: opacity(1);
+}
+
 @media (max-width: 768px){
     .activeLink, .link{
         display: none;
@@ -155,7 +171,7 @@
         font-size: large;
         transition: 0.2s all linear;
         cursor: pointer;
-        filter: opacity(0.6);
+        filter: opacity(0.3);
     }
 
     .burger:hover{
